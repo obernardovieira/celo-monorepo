@@ -1,0 +1,17 @@
+[
+  {
+    "releaseStartTime": MAINNET_LAUNCH,
+    "releaseCliffTime": 0,
+    "numReleasePeriods": Col G,
+    "releasePeriod": monthly,
+    "amountReleasedPerPeriod": Col G,
+    "revocable": Col E,
+    "beneficiary": Col C,
+    "releaseOwner": APF entity?,
+    "refundAddress": Asa,
+    "subjectToLiquidityProvision": false,
+    "initialDistributionRatio": 1000,
+    "canValidate": Col F,
+    "canVote": Col F
+  }
+]

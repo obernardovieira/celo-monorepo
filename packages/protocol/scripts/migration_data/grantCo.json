@@ -1,0 +1,17 @@
+[ // Polychain row not filled
+  {
+    "releaseStartTime": UNKNOWN,
+    "releaseCliffTime": UNKNOWN,
+    "numReleasePeriods": UNKNOWN,
+    "releasePeriod": monthly,
+    "amountReleasedPerPeriod": Col H,
+    "revocable": Col E,
+    "beneficiary": Col C,
+    "releaseOwner": GrantCo Entity?,
+    "refundAddress": Asa,
+    "subjectToLiquidityProvision": UNKNOWN,
+    "initialDistributionRatio": UNKNOWN,
+    "canValidate": Col F, 
+    "canVote": implied true
+  }
+]

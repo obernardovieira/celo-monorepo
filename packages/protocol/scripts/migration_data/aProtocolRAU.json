@@ -1,0 +1,62 @@
+[ // Done pending 2 TODOs
+  {
+    "releaseStartTime": "8/16/2020",
+    "releaseCliffTime": 31536000,
+    "numReleasePeriods": 24,
+    "releasePeriod": 2628000,
+    "amountReleasedPerPeriod": 8333.133333300000000000,
+    "revocable": true, // TODO: ask
+    "beneficiary": "0x775a5c899fd4a7cdd54e9f41738087748cfcb314",
+    "releaseOwner": "TBD",
+    "refundAddress": "TBD",
+    "subjectToLiquidityProvision": true,
+    "initialDistributionRatio": 1000,
+    "canValidate": false, // TODO: ask
+    "canVote": true
+  },
+  {
+    "releaseStartTime": "12/21/2018",
+    "releaseCliffTime": 31536000,
+    "numReleasePeriods": 48,
+    "releasePeriod": 2628000,
+    "amountReleasedPerPeriod": 125000.100000000000000000,
+    "revocable": true, // TODO: ask
+    "beneficiary": "0x775a5c899fd4a7cdd54e9f41738087748cfcb315",
+    "releaseOwner": "TBD",
+    "refundAddress": "TBD",
+    "subjectToLiquidityProvision": true,
+    "initialDistributionRatio": 1000,
+    "canValidate": false, // TODO: ask
+    "canVote": true
+  },
+  {
+    "releaseStartTime": "12/21/2018",
+    "releaseCliffTime": 31536000,
+    "numReleasePeriods": 48,
+    "releasePeriod": 2628000,
+    "amountReleasedPerPeriod": 41667.100000000000000000,
+    "revocable": true, // TODO: ask
+    "beneficiary": "0x775a5c899fd4a7cdd54e9f41738087748cfcb316",
+    "releaseOwner": "TBD",
+    "refundAddress": "TBD",
+    "subjectToLiquidityProvision": true,
+    "initialDistributionRatio": 1000,
+    "canValidate": false, // TODO: ask
+    "canVote": true
+  },
+  {
+    "releaseStartTime": "12/21/2018",
+    "releaseCliffTime": 31536000,
+    "numReleasePeriods": 48,
+    "releasePeriod": 2628000,
+    "amountReleasedPerPeriod": 41667.100000000000000000,
+    "revocable": true, // TODO: ask
+    "beneficiary": "0x775a5c899fd4a7cdd54e9f41738087748cfcb317",
+    "releaseOwner": "TBD",
+    "refundAddress": "TBD",
+    "subjectToLiquidityProvision": true,
+    "initialDistributionRatio": 1000,
+    "canValidate": false, // TODO: ask
+    "canVote": true
+  }
+]

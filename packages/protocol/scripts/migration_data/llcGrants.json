@@ -1,0 +1,17 @@
+[
+  {
+    "releaseStartTime": UNKOWN - potential default?,
+    "releaseCliffTime": UNKOWN - potential default?,
+    "numReleasePeriods": UNKOWN - potential default?,
+    "releasePeriod": Monthly?,
+    "amountReleasedPerPeriod": Col T,
+    "revocable": Col D,
+    "beneficiary": Col C,
+    "releaseOwner": LLC entity,
+    "refundAddress": Asa,
+    "subjectToLiquidityProvision": UNKOWN,
+    "initialDistributionRatio": UNKOWN,
+    "canValidate": Col E,
+    "canVote": Implicit true? 
+  }
+]

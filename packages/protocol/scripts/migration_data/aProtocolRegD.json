@@ -1,0 +1,17 @@
+[
+  {
+    "releaseStartTime": Col E,
+    "releaseCliffTime": Col G, // TODO
+    "numReleasePeriods": Col H, // TODO
+    "releasePeriod": MONTHLY,
+    "amountReleasedPerPeriod": Col M,
+    "revocable": UNKNOWN,
+    "beneficiary": Col A,
+    "releaseOwner": AProtocol entity?,
+    "refundAddress": Asa,
+    "subjectToLiquidityProvision": UNKNOWN,
+    "initialDistributionRatio": UNKOWN,
+    "canValidate": UNKNOWN,
+    "canVote": Implicitly true? 
+  }
+]
