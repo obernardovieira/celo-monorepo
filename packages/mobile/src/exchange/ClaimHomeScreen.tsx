@@ -2,10 +2,47 @@ import * as React from 'react';
 import { Text, View, Button, NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import { newKit } from '@celo/contractkit';
 import ImpaktMarketABI from './ImpaktMarketABI.native.json';
+import componentWithAnalytics from 'src/analytics/wrapper';
+import { connect } from 'react-redux';
+import { RootState } from 'src/redux/reducers'
+import { currentAccountSelector } from 'src/web3/selectors';
+import { refreshAllBalances, setLoading } from 'src/home/actions';
+import { resetStandbyTransactions } from 'src/transactions/actions';
+import { initializeSentryUserContext } from 'src/sentry/Sentry';
+import { exitBackupFlow } from 'src/app/actions';
+import { showMessage } from 'src/alert/actions';
 
 
 
-export default function ClaimHomeScreen() {
+interface StateProps {
+    address?: string | null
+}
+
+interface DispatchProps {
+    refreshAllBalances: typeof refreshAllBalances
+    resetStandbyTransactions: typeof resetStandbyTransactions
+    initializeSentryUserContext: typeof initializeSentryUserContext
+    exitBackupFlow: typeof exitBackupFlow
+    setLoading: typeof setLoading
+    showMessage: typeof showMessage
+}
+
+type Props = StateProps & DispatchProps
+
+const mapDispatchToProps = {
+    refreshAllBalances,
+    resetStandbyTransactions,
+    initializeSentryUserContext,
+    exitBackupFlow,
+    setLoading,
+    showMessage,
+}
+
+const mapStateToProps = (state: RootState): StateProps => ({
+    address: currentAccountSelector(state),
+})
+
+function ClaimHomeScreen(props: Props) {
     const [nextClaim, setNextClaim] = React.useState<number>(0);
     const [claimDisabled, setClaimDisabled] = React.useState<boolean>(true);
     const [isUser, setIsUser] = React.useState<boolean>(false);
@@ -50,7 +87,15 @@ export default function ClaimHomeScreen() {
 
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>{props.address}</Text>
             {isUser ? userView : nonUserView}
         </View>
     );
 }
+
+export default componentWithAnalytics(
+    connect<StateProps, DispatchProps, {}, RootState>(
+        mapStateToProps,
+        mapDispatchToProps
+    )(ClaimHomeScreen)
+);
