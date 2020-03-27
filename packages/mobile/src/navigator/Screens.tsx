@@ -33,6 +33,7 @@ export enum Screens {
   EnterInviteCode = 'EnterInviteCode',
   ErrorScreen = 'ErrorScreen',
   ExchangeHomeScreen = 'ExchangeHomeScreen',
+  ClaimHomeScreen = 'ClaimHomeScreen',
   ExchangeReview = 'ExchangeReview',
   ExchangeTradeScreen = 'ExchangeTradeScreen',
   FeeEducation = 'FeeEducation',

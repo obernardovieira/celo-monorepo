@@ -18,6 +18,8 @@ import TabBar from 'src/navigator/TabBar'
 import { RootState } from 'src/redux/reducers'
 import { getTabBarActiveNotification } from 'src/redux/selectors'
 import Send from 'src/send/Send'
+import ClaimHomeScreen from 'src/exchange/ClaimHomeScreen'
+import ClaimTabIcon from 'src/icons/ClaimTabIcon'
 
 interface LabelProps {
   tintColor: string
@@ -121,6 +123,14 @@ export const TabNavigator = createBottomTabNavigator(
         tabBarLabel: ({ tintColor }: LabelProps) => {
           return <MenuText testID="ExchangeNavigator" transKey="gold" tintColor={tintColor} />
         },
+      },
+    },
+    [Screens.ClaimHomeScreen]: {
+      screen: ClaimHomeScreen,
+      navigationOptions: {
+        tabBarButtonComponent: TabBarButtonComponent,
+        tabBarIcon: (props: any) => <ClaimTabIcon color={props.tintColor} />,
+        tabBarLabel: () => <Text>Claim</Text>
       },
     },
   },
